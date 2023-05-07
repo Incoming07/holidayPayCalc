@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+  <!--  <meta name="viewport" content="width=device-width, initial-scale=1">-->
+  <title>Pakhunkov S.A. holiday salary calc</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="../static/css/style.css"
+        th:href="@{css/style.css}">
+
+</head>
+<body>
+<div id="canvas">
+    <div class="font_arial" id="box">
+      <form>
+        <label>Расчет отпускных</label>
+        <input class="width font_arial" id="daysOfWeekend" type="number" min="1" oninput="validity.valid||(value='')" name="daysOfWeekend" placeholder="Дней отпуска" required/>
+        <input class="width font_arial" id="middleSalary" type="number" min="1" oninput="validity.valid||(value='')" name="middleSalary" placeholder="Средня з/п за 12 месяцев" required/>
+        <div id="result">Отпускные: 0</div>
+        <input class="width font_arial" id="calculate_btn" value="Посчитать отпускные" name="calculate" type="submit">
+      </form>
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="../static/scripts/calcResponse.js" th:src="@{../scripts/calcResponse.js}"></script>
+</html>
