@@ -6,14 +6,15 @@ ___
 * Free 8080 port
 
 ### Usage:
-* To run app use: 
-
+* To run app use:\
 ``java -jar holidayPayCalc-0.0.1-SNAPSHOT.jar``
-* Show work web page:
-
+* Show work web page:\
 [http://localhost:8080/](http://localhost:8080/)
 
 ### Endpoints:
 *  ``/`` for main web page.
-* ``/calculate`` takes ``get`` request with query params for calculating weekend salary. For example:
+* ``/calculate`` takes ``get`` request with query params for calculating weekend salary. For example:\
 ``/calculate?daysOfWeekend=21&middleSalary=150000``
+
+### Page example:
+![mainPage](main_page_example.png)
